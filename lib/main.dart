@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hoophub_ui/FilePreviewButton/file_preview_button.dart';
+import 'package:hoophub_ui/file_preview_button.dart';
 import 'package:hoophub_ui/Pill/info_pill.dart';
 
 void main() {
