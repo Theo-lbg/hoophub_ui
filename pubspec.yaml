@@ -1,0 +1,18 @@
+name: hoophub_ui
+description: "HoopHub UI is a Flutter UI library for building the Hoophub app."
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
