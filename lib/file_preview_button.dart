@@ -29,59 +29,56 @@ class FilePreviewButton extends StatelessWidget {
       child: Material(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(20),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(20),
-          onTap: onTap,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ClipRRect(
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  topRight: Radius.circular(20),
-                ),
-                child: SizedBox(
-                  height: 170,
-                  width: double.infinity,
-                  child: imagePreview,
-                ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
               ),
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
-                  vertical: 16,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Wrap(
-                            spacing: 8,
-                            runSpacing: 8,
-                            children: tags,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Icon(Icons.more_vert, size: 28, color: Colors.black87),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      title,
-                      style: const TextStyle(
-                        fontFamily: 'Raleway',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 28,
-                        color: Color(0xFF222222),
+              child: SizedBox(
+                height: 170,
+                width: double.infinity,
+                child: imagePreview,
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Wrap(spacing: 8, runSpacing: 8, children: tags),
                       ),
+                      const SizedBox(width: 8),
+                      InkWell(
+                        borderRadius: BorderRadius.circular(16),
+                        onTap: onTap,
+                        child: const Icon(
+                          Icons.more_vert,
+                          size: 28,
+                          color: Colors.black87,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontFamily: 'SFProRounded',
+                      fontWeight: FontWeight.w400,
+                      fontSize: 28,
+                      color: Color(0xFF222222),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

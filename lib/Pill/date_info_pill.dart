@@ -19,11 +19,10 @@ class DateInfoPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 115,
+      width: 56,
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -32,33 +31,32 @@ class DateInfoPill extends StatelessWidget {
             dayLabel,
             style: TextStyle(
               color: textColor,
-              fontSize: 23,
+              fontSize: 14,
               fontWeight: FontWeight.w700,
-              fontFamily: 'SF Pro Rounded',
-              height: 0.9,
+              fontFamily: 'SFProRounded',
+              height: 1.0,
             ),
           ),
-          SizedBox(height: 3),
+          SizedBox(height: 2),
           Text(
             dayNumber,
             style: TextStyle(
               color: textColor,
-              fontSize: 45,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'SF Pro Rounded',
-              height: 0.9,
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
+              fontFamily: 'SFProRounded',
+              height: 1.0,
             ),
           ),
-          SizedBox(height: 3),
-
+          SizedBox(height: 2),
           Text(
             monthLabel,
             style: TextStyle(
               color: textColor,
-              fontSize: 23,
+              fontSize: 14,
               fontWeight: FontWeight.w700,
-              fontFamily: 'SF Pro Rounded',
-              height: 0.9,
+              fontFamily: 'SFProRounded',
+              height: 1.0,
             ),
           ),
         ],

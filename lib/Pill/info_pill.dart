@@ -46,7 +46,7 @@ class InfoPill extends StatelessWidget {
               fontWeight: FontWeight.w600,
               fontSize: size,
               color: labelColor,
-              fontFamily: 'Rubik',
+              fontFamily: 'SFProRounded',
             ),
           ),
         ],
