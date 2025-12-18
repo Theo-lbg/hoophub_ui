@@ -111,7 +111,7 @@ class _ButtonState extends State<Button> {
                         : Colors.black.withAlpha(150),
                     fontSize: 15,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'SF Pro Rounded',
+                    fontFamily: 'SFProRounded',
                   ),
                 ),
           ),

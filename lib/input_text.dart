@@ -83,14 +83,14 @@ class _InputTextState extends State<InputText> {
                 : primaryFont,
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            fontFamily: 'SF Pro Rounded',
+            fontFamily: 'SFProRounded',
           ),
         ),
         style: const TextStyle(
           color: primaryFont,
           fontSize: 18,
           fontWeight: FontWeight.w600,
-          fontFamily: 'SF Pro Rounded',
+          fontFamily: 'SFProRounded',
         ),
       ),
     );
